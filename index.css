@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+}
+body{
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    overflow-x: hidden;
+}
+#result-container {
+    width: 100%;
+    background: linear-gradient(to bottom, blue, 80%, darkblue);
+    height: fit-content;
+    overflow: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+#h1{
+    text-align: center;
+    text-transform: capitalize;
+    color: lightgray;
+    font-size: 1.2rem;
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+#score-total{
+    font-size: 1rem;
+    padding: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 100%;
+    text-align: center;
+}
+#actual-score{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: white;
+}
+#word-score{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+#score-desc{
+    color: rgb(224, 224, 224);
+    text-align: center;
+    width: 70%;
+    margin-bottom: 2.5rem;
+}
+#point-summary{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+#summary{
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#point-system-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.point-system{
+    margin-left: 1rem;
+
+}
+.point-div{
+    background-color: darkgray;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score-num{
+    margin-right: 1.2rem;
+    color: rgb(22, 22, 22) !important;
+    font-weight: bold;
+}
+
+#continue{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 3rem;
+    background-color: rgb(31, 35, 41);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: none;
+}
+i {
+    margin-right: 0.5rem;
+}
+
+#reaction-container{
+    background-color: rgba(240, 128, 128, 0.5);
+    color: darkred;
+}
+#memory-container{
+    background-color: rgba(255, 255, 0, 0.493);
+    color: darkgoldenrod;
+}
+#verbal-container{
+    background-color: rgba(144, 238, 144, 0.493);
+    color: darkgreen;
+}
+#visual-container{
+    background-color: rgba(173, 216, 230, 0.486);
+
+    color: darkblue;
+}
+.second-num{
+    color: darkgray;
+}
+
+@media  screen and (min-width: 1000px) {
+    main{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 70%;
+        margin: auto;
+    }
+    #result-container{
+        width: fit-content;
+    }
+}
